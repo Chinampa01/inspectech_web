@@ -1,0 +1,17 @@
+{% load static %}
+<div class="container py-5" id="servicios">
+    <h2 class="text-center mb-5 display-4 fw-bold">Servicios Técnicos</h2>
+    <!-- Acordeón Principal -->
+    <div class="accordion" id="serviciosAccordion">
+
+        <!-- ENSAYOS NO DESTRUCTIVOS section-->
+        <section id="ensayos_no_destructivos">
+            {% include 'partials/content/types_services/ensayos_no_destructivos.html' %}
+        </section>
+        
+        <!-- TRATAMIENTO TÉRMICO -->
+        <section id="tratamientos_termicos_dureza">
+            {% include 'partials/content/types_services/tratamientos_termicos_dureza.html' %}
+        </section>
+    </div>
+</div>

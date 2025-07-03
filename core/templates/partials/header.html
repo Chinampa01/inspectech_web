@@ -1,0 +1,34 @@
+{% load static %}
+<!-- Header -->
+<header class="header-collage position-relative text-white overflow-hidden">
+    <!-- Collage de fondo en grid 1x4 -->
+    <div class="header-collage-bg position-absolute top-0 start-0 w-100 h-100 d-grid" style="z-index:0; grid-template-columns: repeat(4, 1fr); grid-template-rows: 1fr; gap: 0;">
+        {% for i in "12345678910"|make_list %}
+        <div class="collage-cell w-100 h-100" data-collage-index="{{ forloop.counter0 }}" style="display: none; grid-row: 1; grid-column: auto;">
+            <img src="{% static 'assets/cover_photos/foto' %}{{ i }}.jpg" class="collage-img w-100 h-100" style="object-fit:cover;">
+        </div>
+        {% endfor %}
+    </div>
+    <div class="header-overlay position-absolute top-0 start-0 w-100 h-100" 
+        style="background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 100%); z-index:1;"></div>
+    <!-- Contenido principal -->
+    <div class="container px-4 px-lg-5 text-center position-relative py-5" style="z-index: 2;">
+        <h1 class="display-3 display-lg-1 fw-bold mb-3 animate__animated animate__fadeInDown">
+            INSPECTECH INGENIEROS<br>
+            <span class="fs-3 fs-lg-2 d-block mt-2">& SERVICIOS INDUSTRIALES</span>
+        </h1>
+        
+        <p class="lead mb-4 animate__animated animate__fadeIn animate__delay-1s">
+            <span class="d-block">Especialistas en inspección industrial</span>
+            <span class="d-block">y ensayos no destructivos</span>
+            <span class="d-block mt-3 badge opacity-90">Soluciones técnicas certificadas desde 2008</span>
+        </p>
+        
+        <a class="btn btn-danger btn-lg px-4 mt-3 animate__animated animate__fadeInUp animate__delay-1s" 
+            href="#servicios"
+            aria-label="Ir a la sección de servicios técnicos">
+            Ver Servicios Técnicos
+        </a>
+    </div>
+    <script src="{% static 'js/scripts.js' %}"></script>
+</header>

@@ -1,0 +1,19 @@
+{% extends 'partials/base.html' %}
+{% load static %}
+{% block title %}Prueba de Vacío en Soldaduras{% endblock %}
+{% block content %}
+<div class="container px-4 py-5">
+    <a href="/#services" class="btn btn-outline-secondary mb-4"><i class="fas fa-arrow-left me-2"></i>Volver a Servicios</a>
+    <h1 class="mb-4 text-danger">Prueba de Vacío en Soldaduras</h1>
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <img src="{% static 'assets/cover_photos/foto0.jpg' %}" class="img-fluid rounded shadow mb-4" alt="Prueba de Vacío en Soldaduras">
+        </div>
+        <div class="col-md-6">
+            <div>
+                <p>La prueba de vacío se utiliza generalmente para detectar fugas en las juntas de soldadura. Se realiza utilizando una caja de prueba con una ventana transparente en la parte superior, que proporciona una visibilidad adecuada para ver el área bajo examen. Se proporcionan conexiones, válvulas, iluminación y medidores, según se requiera. Se utiliza una solución de película de jabón o una solución de detección de fugas comercial, aplicable a las condiciones.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

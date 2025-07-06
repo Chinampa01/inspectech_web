@@ -1,0 +1,61 @@
+{% load static %}
+<!-- VERIFICACIÓN DE MATERIALES -->
+<div class="accordion-item mb-3 border-0 shadow-sm tone2-bg">
+    <h3 class="accordion-header">
+        <button class="accordion-button bg-danger text-white fs-4 fw-bold collapsed" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#collapseVerificacion"
+                aria-expanded="false">
+            <i class="fas fa-search me-3"></i> VERIFICACIÓN DE MATERIALES
+        </button>
+    </h3>
+    <div id="collapseVerificacion" class="accordion-collapse collapse" data-bs-parent="#serviciosAccordion">
+        <div class="accordion-body p-0">
+            
+            <!-- Sub-Acordeón para cada método -->
+            <div class="accordion" id="metodosVerificacion">
+                
+                <!-- Identificación positiva de materiales (PMI) -->
+                <div class="accordion-item border-0 tone1-border">
+                    <h4 class="accordion-header">
+                        <button class="accordion-button bg-light-danger text-dark fs-5" 
+                                type="button"
+                                data-bs-toggle="collapse" 
+                                data-bs-target="#collapsePMI">
+                            Identificación positiva de materiales (PMI)
+                        </button>
+                    </h4>
+                    <div id="collapsePMI" class="accordion-collapse collapse show" data-bs-parent="#metodosVerificacion">
+                        <div class="accordion-body">
+                            <p class="lead">Una evaluación o prueba física de un material realizada para confirmar que el material que ha sido o será puesto en servicio es consistente con lo especificado por el propietario/usuario.</p>
+                            <p>Estas evaluaciones o pruebas pueden proporcionar información cualitativa o cuantitativa suficiente para verificar la composición.</p>
+                            <a href="#contacto" class="btn btn-outline-danger mt-3">Solicitar Servicio</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Calibración de Ferrita -->
+                <div class="accordion-item border-0 tone1-border">
+                    <h4 class="accordion-header">
+                        <button class="accordion-button collapsed bg-light-danger text-dark fs-5" 
+                                type="button"
+                                data-bs-toggle="collapse" 
+                                data-bs-target="#collapseFerrita">
+                            Calibración de Ferrita
+                        </button>
+                    </h4>
+                    <div id="collapseFerrita" class="accordion-collapse collapse" data-bs-parent="#metodosVerificacion">
+                        <div class="accordion-body">
+                            <p class="lead">El metal de soldadura de aceros inoxidables austeníticos forma micro grietas cuando no contienen suficiente contenido de una fase magnética conocida como ferrita delta.</p>
+                            <p>La cantidad de ferrita delta puede predecirse si la composición química del metal de soldadura es conocida. La ferrita en soldaduras de producción puede ser medida usando uno de distintos dispositivos comparadores magnéticos, (calibradores de ferrita) algunos de los cuales son robustos y altamente portables.</p>
+                            <p>La ferrita es medida en Número de Ferrita (FN), y se mide el Contenido de Ferrita Delta de Metal de Soldadura de Aceros Inoxidables Austeníticos y Dúplex Austeníticos- Ferríticos. Típicamente, un mínimo de 3 FN es adecuado para impedir micro grietas, aunque los requerimientos específicos deben ser proporcionados en los documentos de contrato para el trabajo.</p>
+                            <a href="#contacto" class="btn btn-outline-danger mt-3">Solicitar Servicio</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div> 

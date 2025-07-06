@@ -1,0 +1,23 @@
+{% extends 'partials/base.html' %}
+{% load static %}
+{% block title %}Verificación de Materiales{% endblock %}
+{% block content %}
+<div class="container px-4 py-5">
+    <a href="/#services" class="btn btn-outline-secondary mb-4"><i class="fas fa-arrow-left me-2"></i>Volver a Servicios</a>
+    <h1 class="mb-4 text-danger">Verificación de Materiales</h1>
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <img src="{% static 'assets/cover_photos/foto0.jpg' %}" class="img-fluid rounded shadow mb-4" alt="Verificación de Materiales">
+        </div>
+        <div class="col-md-6">
+            <div>
+                <h4 class="fw-bold">Identificación positiva de materiales (PMI)</h4>
+                <p>Una evaluación o prueba física de un material realizada para confirmar que el material que ha sido o será puesto en servicio es consistente con lo especificado por el propietario/usuario. Estas evaluaciones o pruebas pueden proporcionar información cualitativa o cuantitativa suficiente para verificar la composición.</p>
+                <hr>
+                <h4 class="fw-bold">Calibración de Ferrita</h4>
+                <p>El metal de soldadura de aceros inoxidables austeníticos forma micro grietas cuando no contienen suficiente contenido de una fase magnética conocida como ferrita delta. La cantidad de ferrita delta puede predecirse si la composición química del metal de soldadura es conocida. La ferrita en soldaduras de producción puede ser medida usando uno de distintos dispositivos comparadores magnéticos, (calibradores de ferrita) algunos de los cuales son robustos y altamente portables. La ferrita es medida en Número de Ferrita (FN), y se mide el Contenido de Ferrita Delta de Metal de Soldadura de Aceros Inoxidables Austeníticos y Dúplex Austeníticos- Ferríticos. Típicamente, un mínimo de 3 FN es adecuado para impedir micro grietas, aunque los requerimientos específicos deben ser proporcionados en los documentos de contrato para el trabajo.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

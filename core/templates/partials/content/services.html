@@ -1,17 +1,138 @@
 {% load static %}
-<div class="container py-5" id="servicios">
+<div class="container px-4 py-5" id="servicios">
     <h2 class="text-center mb-5 display-4 fw-bold">Servicios Técnicos</h2>
-    <!-- Acordeón Principal -->
-    <div class="accordion" id="serviciosAccordion">
-
-        <!-- ENSAYOS NO DESTRUCTIVOS section-->
-        <section id="ensayos_no_destructivos">
-            {% include 'partials/content/types_services/ensayos_no_destructivos.html' %}
-        </section>
-        
-        <!-- TRATAMIENTO TÉRMICO -->
-        <section id="tratamientos_termicos_dureza">
-            {% include 'partials/content/types_services/tratamientos_termicos_dureza.html' %}
-        </section>
+    <div class="row g-4">
+        <!-- Card: Ensayos No Destructivos -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <a href="{% url 'servicio_ensayos_no_destructivos' %}" class="text-decoration-none text-dark">
+                <div class="card h-100 shadow-sm">
+                    <img src="{% static 'assets/cover_photos/foto0.jpg' %}" class="card-img-top" alt="Ensayos No Destructivos">
+                    <div class="card-body">
+                        <span class="badge bg-primary mb-2">Servicios</span>
+                        <h5 class="card-title">Ensayos No Destructivos</h5>
+                        <ul class="mb-2 ps-3">
+                            <li>Inspección Visual (VT)</li>
+                            <li>Líquidos Penetrantes (PT)</li>
+                            <li>Partículas Magnéticas (MT)</li>
+                            <li>Radiografía (RT)</li>
+                            <li>Interpretación de películas radiográficas (RT)</li>
+                            <li>Ultrasonido (UT)</li>
+                            <li>Medición de espesores (UTM)</li>
+                        </ul>
+                        <span class="text-danger">Ver más</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- Card: Tratamiento Térmico - Dureza -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <a href="{% url 'servicio_tratamiento_termico_dureza' %}" class="text-decoration-none text-dark">
+                <div class="card h-100 shadow-sm">
+                    <img src="{% static 'assets/cover_photos/foto0.jpg' %}" class="card-img-top" alt="Tratamiento Térmico - Dureza">
+                    <div class="card-body">
+                        <span class="badge bg-primary mb-2">Servicios</span>
+                        <h5 class="card-title">Tratamiento Térmico – Dureza</h5>
+                        <ul class="mb-2 ps-3">
+                            <li>Tratamiento Térmico</li>
+                            <li>Dureza</li>
+                        </ul>
+                        <span class="text-danger">Ver más</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- Card: Escuela de Soldadura -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <a href="{% url 'servicio_escuela_soldadura' %}" class="text-decoration-none text-dark">
+                <div class="card h-100 shadow-sm">
+                    <img src="{% static 'assets/cover_photos/foto0.jpg' %}" class="card-img-top" alt="Escuela de Soldadura">
+                    <div class="card-body">
+                        <span class="badge bg-primary mb-2">Capacitación</span>
+                        <h5 class="card-title">Escuela de Soldadura</h5>
+                        <p class="mb-2">Formación y especialización en procesos de soldadura manual, semiautomática y automática, con certificación nacional e internacional.</p>
+                        <span class="text-danger">Ver más</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- Card: Elaboración y Calificación de Procedimientos -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <a href="{% url 'servicio_elaboracion_calificacion_procedimientos' %}" class="text-decoration-none text-dark">
+                <div class="card h-100 shadow-sm">
+                    <img src="{% static 'assets/cover_photos/foto0.jpg' %}" class="card-img-top" alt="Elaboración y Calificación de Procedimientos">
+                    <div class="card-body">
+                        <span class="badge bg-primary mb-2">Servicios</span>
+                        <h5 class="card-title">Elaboración y Calificación de Procedimientos</h5>
+                        <ul class="mb-2 ps-3">
+                            <li>Calificación de Procedimientos de Soldadura y Soldadores (WPS – PQR – WPQR)</li>
+                            <li>Calificación de procedimientos NDT</li>
+                        </ul>
+                        <span class="text-danger">Ver más</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- Card: Metalografía -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <a href="{% url 'servicio_metalografia' %}" class="text-decoration-none text-dark">
+                <div class="card h-100 shadow-sm">
+                    <img src="{% static 'assets/cover_photos/foto0.jpg' %}" class="card-img-top" alt="Metalografía">
+                    <div class="card-body">
+                        <span class="badge bg-primary mb-2">Servicios</span>
+                        <h5 class="card-title">Metalografía</h5>
+                        <ul class="mb-2 ps-3">
+                            <li>Réplica metalográfica de campo (FMR)</li>
+                            <li>Examen macroscópico</li>
+                        </ul>
+                        <span class="text-danger">Ver más</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- Card: Verificación de Materiales -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <a href="{% url 'servicio_verificacion_materiales' %}" class="text-decoration-none text-dark">
+                <div class="card h-100 shadow-sm">
+                    <img src="{% static 'assets/cover_photos/foto0.jpg' %}" class="card-img-top" alt="Verificación de Materiales">
+                    <div class="card-body">
+                        <span class="badge bg-primary mb-2">Servicios</span>
+                        <h5 class="card-title">Verificación de Materiales</h5>
+                        <ul class="mb-2 ps-3">
+                            <li>Identificación positiva de materiales (PMI)</li>
+                            <li>Calibración de Ferrita</li>
+                        </ul>
+                        <span class="text-danger">Ver más</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- Card: Prueba de Vacío en Soldaduras -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <a href="{% url 'servicio_prueba_vacio_soldaduras' %}" class="text-decoration-none text-dark">
+                <div class="card h-100 shadow-sm">
+                    <img src="{% static 'assets/cover_photos/foto0.jpg' %}" class="card-img-top" alt="Prueba de Vacío en Soldaduras">
+                    <div class="card-body">
+                        <span class="badge bg-primary mb-2">Servicios</span>
+                        <h5 class="card-title">Prueba de Vacío en Soldaduras</h5>
+                        <p class="mb-2">Detección de fugas en juntas de soldadura mediante métodos de vacío y soluciones de detección especializadas.</p>
+                        <span class="text-danger">Ver más</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- Card: Capacitación y Certificación NDT-AWS -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <a href="{% url 'servicio_capacitacion_certificacion' %}" class="text-decoration-none text-dark">
+                <div class="card h-100 shadow-sm">
+                    <img src="{% static 'assets/cover_photos/foto0.jpg' %}" class="card-img-top" alt="Capacitación y Certificación NDT-AWS">
+                    <div class="card-body">
+                        <span class="badge bg-primary mb-2">Capacitación</span>
+                        <h5 class="card-title">Capacitación y Certificación NDT-AWS</h5>
+                        <p class="mb-2">Programas de formación y certificación en Ensayos No Destructivos (NDT) y AWS, impartidos por expertos certificados.</p>
+                        <span class="text-danger">Ver más</span>
+                    </div>
+                </div>
+            </a>
+        </div>
     </div>
 </div>

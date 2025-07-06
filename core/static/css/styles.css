@@ -6,37 +6,132 @@
 --black: #000000;
 }
 
+/* NAVBAR */
+.navbar {
+    border-bottom: 3px solid var(--tone2);
+    box-shadow: 0 2px 8px rgba(44,155,166,0.07);
+}
+.navbar-nav .nav-link {
+    color: var(--tone3) !important;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+    color: var(--tone1) !important;
+}
 
-.accordion-item.tone2-bg > .accordion-header > .accordion-button {
+/* BOTONES */
+.btn-danger, .btn-primary {
     background: var(--tone2) !important;
+    border-color: var(--tone2) !important;
     color: #fff !important;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(44,155,166,0.07);
+}
+.btn-danger:hover, .btn-primary:hover {
+    background: var(--tone1) !important;
+    border-color: var(--tone1) !important;
+    color: var(--tone3) !important;
+}
+.btn-outline-secondary {
+    border-color: var(--tone2) !important;
+    color: var(--tone2) !important;
+    font-weight: 500;
+}
+.btn-outline-secondary:hover {
+    background: var(--tone1) !important;
+    color: var(--tone3) !important;
+    border-color: var(--tone1) !important;
 }
 
-.accordion-item.tone1-border {
-    border: 2px solid var(--tone1) !important;
-    border-radius: 0.5rem;
+/* TITULOS Y SECCIONES */
+h1, h2, h3, h4, h5 {
+    color: var(--tone2);
+    font-weight: 700;
+}
+h1.text-danger, h2.text-danger, h3.text-danger {
+    color: var(--tone3) !important;
+}
+.section-title {
+    border-left: 6px solid var(--tone1);
+    padding-left: 12px;
+    margin-bottom: 1.5rem;
+    color: var(--tone2);
+    font-weight: 800;
+    letter-spacing: 1px;
 }
 
-.text-tone1{
-    color: var(--tone1);
+/* CARDS */
+.card {
+    border: 2px solid var(--tone2);
+    border-radius: 1rem;
+    box-shadow: 0 4px 16px rgba(44,155,166,0.08);
+    transition: box-shadow 0.2s, border-color 0.2s;
 }
-.text-tone2{
+.card:hover {
+    box-shadow: 0 8px 32px rgba(89,217,217,0.15);
+    border-color: var(--tone1);
+}
+.card-title {
+    color: var(--tone3);
+    font-weight: 700;
+}
+.badge.bg-primary {
+    background: var(--tone1) !important;
+    color: var(--tone3) !important;
+    font-weight: 700;
+}
+
+/* FOOTER */
+footer {
+    background: var(--tone3) !important;
+    color: var(--tone1) !important;
+    border-top: 4px solid var(--tone2);
+}
+footer p {
+    color: var(--tone1) !important;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+/* DECORATIVOS Y DETALLES */
+hr {
+    border-top: 2px solid var(--tone1);
+    opacity: 0.7;
+}
+.section-divider {
+    width: 60px;
+    height: 5px;
+    background: var(--tone1);
+    border-radius: 3px;
+    margin: 1rem auto 2rem auto;
+}
+
+/* ICONOS */
+.fas, .fa {
     color: var(--tone2);
 }
-.text-tone3{
-    color:var(--tone3);
 
+/* Ajustes generales para layout flex */
+html, body {
+    height: 100%;
 }
-.cus-bg-gradient{
-    background: var(--black) !important;
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
-.cus-bg-black-oled{
-    background-color: var(--dark);
+main {
+    flex: 1 0 auto;
+}
+footer {
+    flex-shrink: 0;
 }
 
-/* Collage de fondo para el header - Versión Mejorada */
+/* Header collage margen para navbar fijo */
 .header-collage {
-    min-height: 400px;
+    margin-top: 56px;
+    min-height: 320px;
     max-height: 600px;
     height: 60vh;
     overflow: hidden;
@@ -44,7 +139,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #000; /* Fallback para mientras cargan las imágenes */
+    background-color: #000;
 }
 
 .header-collage-bg {
@@ -100,6 +195,80 @@
     }
 }
 
+@media (max-width: 1200px) {
+    .header-collage-bg {
+        grid-template-columns: repeat(3, 1fr) !important;
+        grid-template-rows: repeat(3, 1fr) !important;
+    }
+}
+@media (max-width: 900px) {
+    .header-collage-bg {
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-template-rows: repeat(4, 1fr) !important;
+    }
+    .header-collage {
+        min-height: 320px;
+        max-height: 400px;
+        height: 32vh;
+    }
+    .header-content-bg {
+        background: rgba(255,255,255,0.88);
+        padding: 0.8rem 0.7rem;
+        max-width: 95vw;
+    }
+    .display-3, .display-lg-1 {
+        font-size: 1.3rem !important;
+    }
+    .fs-3, .fs-lg-2 {
+        font-size: 1rem !important;
+    }
+    .header-collage .btn {
+        font-size: 1rem !important;
+        padding: 0.5rem 1.2rem !important;
+        margin-top: 0.7rem !important;
+    }
+}
+@media (max-width: 650px) {
+    .header-collage {
+        min-height: 320px;
+        max-height: 400px;
+        height: 32vh;
+    }
+    .header-collage-bg {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: repeat(6, 1fr) !important;
+    }
+    .header-content-bg {
+        background: rgba(255,255,255,0.95);
+        padding: 0.5rem 0.3rem;
+        max-width: 99vw;
+    }
+    .display-3, .display-lg-1 {
+        font-size: 1rem !important;
+    }
+    .fs-3, .fs-lg-2 {
+        font-size: 0.8rem !important;
+    }
+    .header-collage .btn {
+        font-size: 0.9rem !important;
+        padding: 0.4rem 0.7rem !important;
+        margin-top: 0.5rem !important;
+    }
+}
+
+.navbar-brand img {
+    width: 250px;
+    max-width: 100%;
+    height: auto;
+    transition: width 0.2s;
+}
+
+/* Ajuste para que el header no se solape con el navbar hamburguesa */
+@media (max-width: 991.98px) {
+    .navbar {
+        min-height: 48px;
+    }
+}
 
 /* Estilos para acordeones */
 .accordion-button {
@@ -124,4 +293,90 @@
 .fas {
     width: 24px;
     text-align: center;
+}
+
+/* Eliminar espacio entre acordeones principales de servicios */
+#servicios .accordion-item {
+    margin-bottom: 0 !important;
+}
+#servicios section {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+}
+
+/* Espaciado entre secciones principales */
+.container + .container, .container + .container-fluid, .container-fluid + .container {
+    margin-top: 2rem !important;
+}
+
+/* Ajuste específico para la sección de servicios */
+#servicios {
+    margin-top: 2rem !important;
+    padding-top: 0 !important;
+}
+
+/* Ajuste para la última sección de la anterior (Sobre Nosotros) */
+#about, .about-section {
+    margin-bottom: 1.5rem !important;
+    padding-bottom: 0 !important;
+}
+
+/* Fondo semitransparente más opaco y con desenfoque para el texto del header */
+.header-content-bg {
+    background: rgba(255,255,255,0.85);
+    border-radius: 1rem;
+    display: inline-block;
+    padding: 1.2rem 2.5rem;
+    margin: 0 auto;
+    box-shadow: 0 2px 16px rgba(44,155,166,0.10);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    max-width: 700px;
+}
+
+.header-collage, #headerCarousel, #headerCarousel .carousel-inner, #headerCarousel .carousel-item, #headerCarousel img {
+    width: 100%;
+    height: 100%;
+    min-height: 320px;
+    max-height: 600px;
+    object-fit: cover;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+}
+
+/* Fallback para navegadores antiguos */
+.header-collage {
+    height: 0;
+    padding-top: 75%; /* 3/4 = 75% */
+    position: relative;
+}
+#headerCarousel, #headerCarousel .carousel-inner, #headerCarousel .carousel-item, #headerCarousel img {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    height: 100% !important;
+    width: 100% !important;
+}
+
+/* Ajuste para overlay y contenido */
+.header-overlay {
+    aspect-ratio: 4/3;
+    height: 100% !important;
+    width: 100% !important;
+    top: 0; left: 0;
+}
+
+@media (max-width: 650px) {
+    .header-collage {
+        padding-top: 75%;
+        min-height: unset;
+        max-height: unset;
+        height: 0;
+    }
+}
+
+/* Eliminar reglas de aspect-ratio y padding-top para header-collage */
+.header-collage, #headerCarousel, #headerCarousel .carousel-inner, #headerCarousel .carousel-item, #headerCarousel img {
+    aspect-ratio: unset !important;
+    padding-top: unset !important;
 }

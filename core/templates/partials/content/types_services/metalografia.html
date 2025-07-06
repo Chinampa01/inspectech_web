@@ -1,0 +1,61 @@
+{% load static %}
+<!-- METALOGRAFÍA -->
+<div class="accordion-item mb-3 border-0 shadow-sm tone2-bg">
+    <h3 class="accordion-header">
+        <button class="accordion-button bg-danger text-white fs-4 fw-bold collapsed" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#collapseMetalografia"
+                aria-expanded="false">
+            <i class="fas fa-microscope me-3"></i> METALOGRAFÍA
+        </button>
+    </h3>
+    <div id="collapseMetalografia" class="accordion-collapse collapse" data-bs-parent="#serviciosAccordion">
+        <div class="accordion-body p-0">
+            
+            <!-- Sub-Acordeón para cada método -->
+            <div class="accordion" id="metodosMetalografia">
+                
+                <!-- Réplica metalográfica de campo (FMR) -->
+                <div class="accordion-item border-0 tone1-border">
+                    <h4 class="accordion-header">
+                        <button class="accordion-button bg-light-danger text-dark fs-5" 
+                                type="button"
+                                data-bs-toggle="collapse" 
+                                data-bs-target="#collapseFMR">
+                            Réplica metalográfica de campo (FMR)
+                        </button>
+                    </h4>
+                    <div id="collapseFMR" class="accordion-collapse collapse show" data-bs-parent="#metodosMetalografia">
+                        <div class="accordion-body">
+                            <p class="lead">FMR es una técnica de inspección metalúrgica no destructiva que se utiliza para evaluar las microestructuras de equipos de planta como calentadores, calderas, tuberías y reactores, a menudo un componente clave al realizar una evaluación de aptitud para el servicio.</p>
+                            <p>FMR es a menudo la opción menos disruptiva y rentable para el examen metalúrgico al tomar decisiones importantes de ejecución, reparación o reemplazo.</p>
+                            <p>La réplica se puede examinar en el campo con un microscopio óptico portátil o en el laboratorio. Este proceso da a nuestros ingenieros metalúrgicos la capacidad de examinar características microestructurales como el tamaño del grano, las grietas, los carburos y otros mecanismos de daño.</p>
+                            <a href="#contacto" class="btn btn-outline-danger mt-3">Solicitar Servicio</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Examen macroscópico -->
+                <div class="accordion-item border-0 tone1-border">
+                    <h4 class="accordion-header">
+                        <button class="accordion-button collapsed bg-light-danger text-dark fs-5" 
+                                type="button"
+                                data-bs-toggle="collapse" 
+                                data-bs-target="#collapseMacroscopico">
+                            Examen macroscópico
+                        </button>
+                    </h4>
+                    <div id="collapseMacroscopico" class="accordion-collapse collapse" data-bs-parent="#metodosMetalografia">
+                        <div class="accordion-body">
+                            <p class="lead">Los estándares de calidad exigen secciones transversales de soldaduras a tope y de filete para las pruebas de calificación del procedimiento de soldadura y pueden requerirse para algunas pruebas de calificación del soldador para evaluar la calidad de las soldaduras.</p>
+                            <p>El objetivo principal es la detección de defectos de soldadura (macro).</p>
+                            <a href="#contacto" class="btn btn-outline-danger mt-3">Solicitar Servicio</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div> 

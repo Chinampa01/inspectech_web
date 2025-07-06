@@ -1,15 +1,69 @@
-<div class="accordion-item mb-3 border-0 shadow-sm">
+{% load static %}
+<!-- TRATAMIENTO TÉRMICO - DUREZA -->
+<div class="accordion-item border-0 shadow-sm tone2-bg mb-0">
     <h3 class="accordion-header">
-        <button class="accordion-button collapsed bg-danger text-white fs-4 fw-bold" 
+        <button class="accordion-button bg-danger text-white fs-4 fw-bold collapsed" 
                 type="button" 
                 data-bs-toggle="collapse" 
-                data-bs-target="#collapseTT">
-            <i class="fas fa-fire me-3"></i> TRATAMIENTO TÉRMICO
+                data-bs-target="#collapseTT"
+                aria-expanded="false">
+            <i class="fas fa-fire me-3"></i> TRATAMIENTO TÉRMICO – DUREZA
         </button>
     </h3>
     <div id="collapseTT" class="accordion-collapse collapse" data-bs-parent="#serviciosAccordion">
-        <div class="accordion-body">
+        <div class="accordion-body p-0">
             
+            <!-- Sub-Acordeón para cada método -->
+            <div class="accordion" id="metodosTT">
+                
+                <!-- Tratamiento Térmico -->
+                <div class="accordion-item border-0 tone1-border">
+                    <h4 class="accordion-header">
+                        <button class="accordion-button bg-light-danger text-dark fs-5" 
+                                type="button"
+                                data-bs-toggle="collapse" 
+                                data-bs-target="#collapseTratamiento">
+                            Tratamiento Térmico
+                        </button>
+                    </h4>
+                    <div id="collapseTratamiento" class="accordion-collapse collapse show" data-bs-parent="#metodosTT">
+                        <div class="accordion-body">
+                            <p class="lead">Se debe aplicar un tratamiento térmico posterior (PWHT) a la soldadura a algunos aceros soldados para garantizar que las propiedades de la soldadura sean adecuadas para las aplicaciones previstas.</p>
+                            <p>La temperatura a la que se lleva a cabo la PWHT suele estar muy por debajo de la temperatura en la que pueden ocurrir cambios de fase, pero lo suficientemente alta como para permitir que las tensiones residuales se alivie rápidamente y para suavizar (templar) cualquier región dura en la zona afectada por el calor (ZAC).</p>
+                            <p>Existen importantes beneficios al reducir la tensión residual y garantizar que la dureza de la ZAC no sea demasiado alta para aceros particulares con ciertas aplicaciones de servicio.</p>
+                            <p><strong>Ejemplos de estos beneficios son:</strong></p>
+                            <ul>
+                                <li>Mejora de la resistencia de la articulación a fractura frágil.</li>
+                                <li>Mejora de la resistencia de la junta al agrietamiento por corrosión bajo tensión.</li>
+                                <li>Permite mecanizar juntas soldadas con tolerancias dimensionales precisas.</li>
+                            </ul>
+                            <p>Debido a que la razón principal (y el beneficio) de PWHT es reducir las tensiones residuales, a menudo se denomina alivio de tensión a PWHT.</p>
+                            <a href="#contacto" class="btn btn-outline-danger mt-3">Solicitar Servicio</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dureza -->
+                <div class="accordion-item border-0 tone1-border">
+                    <h4 class="accordion-header">
+                        <button class="accordion-button collapsed bg-light-danger text-dark fs-5" 
+                                type="button"
+                                data-bs-toggle="collapse" 
+                                data-bs-target="#collapseDureza">
+                            Dureza
+                        </button>
+                    </h4>
+                    <div id="collapseDureza" class="accordion-collapse collapse" data-bs-parent="#metodosTT">
+                        <div class="accordion-body">
+                            <p class="lead">La dureza de un material se define como la resistencia a la deformación plástica por indentación. La dureza de indentación se puede medir mediante varias pruebas de dureza, como Brinell, Rockwell, Knoop y Vickers.</p>
+                            <p>Las mediciones de dureza pueden proporcionar información sobre los cambios metalúrgicos causados por la soldadura. En los aceros aleados, una medición de dureza alta podría indicar la presencia de martensita no revenida en la soldadura o en la zona afectada por el calor, mientras que una dureza baja puede indicar una condición de revenido excesivo.</p>
+                            <p>Existe una interrelación aproximada entre los diferentes resultados de las pruebas de dureza y la resistencia a la tracción de algunos metales. La correlación entre los valores de dureza y la resistencia a la tracción debe usarse con precaución cuando se aplica a uniones soldadas o cualquier metal con una estructura heterogénea.</p>
+                            <a href="#contacto" class="btn btn-outline-danger mt-3">Solicitar Servicio</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 </div>

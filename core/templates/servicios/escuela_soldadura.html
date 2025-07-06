@@ -1,0 +1,21 @@
+{% extends 'partials/base.html' %}
+{% load static %}
+{% block title %}Escuela de Soldadura{% endblock %}
+{% block content %}
+<div class="container px-4 py-5">
+    <a href="/#services" class="btn btn-outline-secondary mb-4"><i class="fas fa-arrow-left me-2"></i>Volver a Servicios</a>
+    <h1 class="mb-4 text-danger">Escuela de Soldadura</h1>
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <img src="{% static 'assets/cover_photos/foto0.jpg' %}" class="img-fluid rounded shadow mb-4" alt="Escuela de Soldadura">
+        </div>
+        <div class="col-md-6">
+            <div>
+                <p>INSPECTECH INGENIEROS organiza cursos de especialización para procesos manuales, semiautomáticos y automáticos de aleaciones ferrosas y no ferrosas (SMAW, GMAW, FCAW, GTAW) en su escuela de soldadura. Las lecciones pueden basarse no solo en el estudio práctico, es decir, ejercicios de laboratorio, sino también en el teórico de metalurgia, tecnología, seguridad e higiene en la soldadura.<br><br>
+                La duración de los cursos (actividades didácticas) depende en gran medida del nivel de partida del estudiante o de la experiencia del soldador en el proceso de soldadura específico y de los objetivos a alcanzar. Los cursos están programados durante todo el año y pueden ser de formación básica, especialización, cualificación de operarios de soldadura con vistas a la certificación según las principales normativas nacionales e internacionales del sector como AWS, API, ASME, etc., y recalificación y renovación de la licencia de soldador.<br><br>
+                La admisión a los cursos está abierta a todos; para el acceso al examen de habilitación de soldador, la normativa vigente no exige requisitos de formación particulares.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

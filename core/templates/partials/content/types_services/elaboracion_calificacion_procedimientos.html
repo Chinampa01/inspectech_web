@@ -1,0 +1,60 @@
+{% load static %}
+<!-- ELABORACIÓN Y CALIFICACIÓN DE PROCEDIMIENTOS -->
+<div class="accordion-item mb-3 border-0 shadow-sm tone2-bg">
+    <h3 class="accordion-header">
+        <button class="accordion-button bg-danger text-white fs-4 fw-bold collapsed" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#collapseProcedimientos"
+                aria-expanded="false">
+            <i class="fas fa-clipboard-list me-3"></i> ELABORACIÓN Y CALIFICACIÓN DE PROCEDIMIENTOS
+        </button>
+    </h3>
+    <div id="collapseProcedimientos" class="accordion-collapse collapse" data-bs-parent="#serviciosAccordion">
+        <div class="accordion-body p-0">
+            
+            <!-- Sub-Acordeón para cada método -->
+            <div class="accordion" id="metodosProcedimientos">
+                
+                <!-- Calificación de Procedimientos de Soldadura y Soldadores -->
+                <div class="accordion-item border-0 tone1-border">
+                    <h4 class="accordion-header">
+                        <button class="accordion-button bg-light-danger text-dark fs-5" 
+                                type="button"
+                                data-bs-toggle="collapse" 
+                                data-bs-target="#collapseWPS">
+                            Calificación de Procedimientos de Soldadura y Soldadores (WPS – PQR – WPQR)
+                        </button>
+                    </h4>
+                    <div id="collapseWPS" class="accordion-collapse collapse show" data-bs-parent="#metodosProcedimientos">
+                        <div class="accordion-body">
+                            <p class="lead">La Calificación de Soldaduras y Soldadores es un proceso que va tomando mayor importancia y demanda en nuestro medio, pues se requiere que las soldaduras ejecutadas en una amplia variedad de aplicaciones de Ingeniería Mecánica cumplan con los requisitos del Código de Calificación aplicado.</p>
+                            <p>Para de esta forma, alcanzar en cada caso los estándares de calidad convenientes; debiéndose tener en cuenta que, dicho código debe elegirse de acuerdo al tipo de servicio que prestará la soldadura y a las características del material a soldar.</p>
+                            <a href="#contacto" class="btn btn-outline-danger mt-3">Solicitar Servicio</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Calificación de procedimientos NDT -->
+                <div class="accordion-item border-0 tone1-border">
+                    <h4 class="accordion-header">
+                        <button class="accordion-button collapsed bg-light-danger text-dark fs-5" 
+                                type="button"
+                                data-bs-toggle="collapse" 
+                                data-bs-target="#collapseNDTProc">
+                            Calificación de procedimientos NDT
+                        </button>
+                    </h4>
+                    <div id="collapseNDTProc" class="accordion-collapse collapse" data-bs-parent="#metodosProcedimientos">
+                        <div class="accordion-body">
+                            <p class="lead">Elaboración, revisión y asesoramientos de Procedimientos por Ingeniero y Nivel III ASNT quienes se encuentran en constante capacitación y actualización para brindar el mejor servicio según las necesidades de su empresa.</p>
+                            <p>Nuestro servicio personalizado permite que el Ingeniero haga un acompañamiento virtual de sus requerimientos.</p>
+                            <a href="#contacto" class="btn btn-outline-danger mt-3">Solicitar Servicio</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div> 

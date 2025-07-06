@@ -1,0 +1,25 @@
+{% extends 'partials/base.html' %}
+{% load static %}
+{% block title %}Metalografía{% endblock %}
+{% block content %}
+<div class="container px-4 py-5">
+    <a href="/#services" class="btn btn-outline-secondary mb-4"><i class="fas fa-arrow-left me-2"></i>Volver a Servicios</a>
+    <h1 class="mb-4 text-danger">Metalografía</h1>
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <img src="{% static 'assets/cover_photos/foto0.jpg' %}" class="img-fluid rounded shadow mb-4" alt="Metalografía">
+        </div>
+        <div class="col-md-6">
+            <div>
+                <h4 class="fw-bold">Réplica metalográfica de campo (FMR)</h4>
+                <p>FMR es una técnica de inspección metalúrgica no destructiva que se utiliza para evaluar las microestructuras de equipos de planta como calentadores, calderas, tuberías y reactores, a menudo un componente clave al realizar una evaluación de aptitud para el servicio. FMR es a menudo la opción menos disruptiva y rentable para el examen metalúrgico al tomar decisiones importantes de ejecución, reparación o reemplazo.<br><br>
+                La réplica se puede examinar en el campo con un microscopio óptico portátil o en el laboratorio. Este proceso da a nuestros ingenieros metalúrgicos la capacidad de examinar características microestructurales como el tamaño del grano, las grietas, los carburos y otros mecanismos de daño.</p>
+                <hr>
+                <h4 class="fw-bold">Examen macroscópico</h4>
+                <p>Los estándares de calidad exigen secciones transversales de soldaduras a tope y de filete para las pruebas de calificación del procedimiento de soldadura y pueden requerirse para algunas pruebas de calificación del soldador para evaluar la calidad de las soldaduras.<br><br>
+                El objetivo principal es la detección de defectos de soldadura (macro).</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 
